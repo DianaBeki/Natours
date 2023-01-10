@@ -216,5 +216,7 @@ position: relative;
         - CSS declarations marked with ! important have the highest priority.
         - A selector that contains 1 ID is more specific than one with 1000 classes, If you want to be really specific use an ID.
         - universal selector has no specificity value(0, 0,0,0). 
-
+        - To convert ems to px we multiply by 24px example 3em = (3*24)72px
+        - while converting rems into px we multiply by 16px e.g 10rem = 160px.
+        - ems and rems are both based on font size.
        */
