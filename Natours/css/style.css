@@ -36,7 +36,6 @@ body {
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-
 }
 
 .logo-box {
@@ -72,8 +71,8 @@ left: 40px;
   display: block;
   font-size: 60px;
   font-weight: 400;
-letter-spacing: 35px;
-animation: moveInLeft 1s ease-out;
+  letter-spacing: 35px;
+  animation: moveInLeft 1s ease-out;
 }
 
 /*
@@ -92,7 +91,7 @@ animation: moveInRight 1s ease-out;
  @keyframes moveInLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px) rotate(-50deg);
+    transform: translateX(-100px);
   }
 
   60% {
@@ -205,3 +204,17 @@ position: relative;
   animation: moveInBottom .5s ease-out .7s;
   animation-fill-mode: backwards;
 }
+
+/*THE CASCADE AND SPECIFICITY
+  1.Selector specificity include 
+       - inline styles
+       - IDs
+       - Classes
+       - Elements
+
+       background: blue ! important;
+        - CSS declarations marked with ! important have the highest priority.
+        - A selector that contains 1 ID is more specific than one with 1000 classes, If you want to be really specific use an ID.
+        - universal selector has no specificity value(0, 0,0,0). 
+
+       */
